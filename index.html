@@ -13,42 +13,49 @@
     body{
         width: 1920px;
         margin:auto;
-       /* background: linear-gradient(#ffffff,#71b8fa) fixed;*/
+       background: linear-gradient(#ffffff,#86c4ff) fixed;
     }
-    li{
-        list-style-type: none;
-    }
+    
+   
     .clear{
         clear:both;
     }
-    
-    nav li{
-        margin: 10px 1px;
-        text-align: center;
-        color: black;
-    } 
-    nav{
+
+     nav{
         float: left;
         width: 130px;
         height: 150px;
         background-color: #FFFFFF;
         opacity: 0.5;
-        border:solid 1px #bbbbbb;
+      
     } 
+    nav li{
+        margin: 10px 1px;
+        text-align: center;
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 700;
+        color: rgb(255, 55, 55);
+        transition: transform 0.5s;
+    } 
+
+    nav li:hover{
+        transform:scale(1.1,1.1);
+    }
+   
     aside{
-        width: 130px;
+        width: 260px;
         height: 150px;
         float: right;
         margin-right: 30px;
-        border:solid 1px #bbbbbb;
-    
     }
     #logoback{
         width: 100%;
         height: 120px;
         background-color: #FFFFFF;
         text-align: center;
-        border:solid 1px #bbbbbb;
+
     
     }
 
@@ -78,7 +85,6 @@
          left: 170px;
          width: 600px;
          bottom: 40px;
-         border:solid 1px #bbbbbb;
         
 
       }
@@ -91,6 +97,10 @@
         padding-top: 10px;
         border-top: 2px solid #ffffff;
         margin: 10px 560px 2px 560px;
+        color: white;
+        font-family: 나눔스퀘어;
+        font-size: 18px;
+        font-weight: 500;
       }
       #notice{
         float: left;
@@ -98,13 +108,23 @@
      #customer{
         float: right; 
      }
-   
+    a{
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+    }
+    #login{
+        font-size: 17px;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+    }
 </style>
 <body>
     <header>
         <div id="logoback">
             <p id="logowrite">안녕? 나는 유키</p>
-            <p id="login">LOGIN | SIGN UP | MEMBERSHIP</p>
+            <p id="login"><a href="login.html" target="aa"><span>LOGIN | SIGN UP</span></a> | MEMBERSHIP</p>
             <a href="introduce.html" target="aa"><img id="logoyuki" 
                 src="./image/yuki1.JPG" width="150" opacity="100"></a>
         </div>
@@ -112,17 +132,19 @@
     <div class="clear"></div>
     <nav>
     <ul>
-       <li><a href="introduce.html" target="aa">소개</a></li>
-        <li><a href="feature.html" target="aa">특징</a></li>
-        <li><a href="like.html" target="aa">좋아하는 것</a></li>
-        <li><a href="album.html" target="aa">앨범</a></li>
+       <li><a href="introduce.html" target="aa">INTRODUCE</a></li>
+        <li><a href="feature.html" target="aa">FEATURE</a></li>
+        <li><a href="like.html" target="aa">LIKE</a></li>
+        <li><a href="album.html" target="aa">ALBUM</a></li>
     </ul>
     </nav>
-    <aside><a href="https://terms.naver.com/entry.naver?cid=40942&docId=1166006&categoryId=32310" target="_blank"><img src="./image/dog.png"></a></aside>
+    <aside>
+        <div><a href="https://terms.naver.com/entry.naver?cid=40942&docId=1166006&categoryId=32310" target="_blank"><img src="./image/dog.png"></a><img src="./image/adad.png"></div>
+    </aside>
     <section> 
         <article><a href="https://www.instagram.com/isnt_my_dog_cute/" target="_blank"><div id="instalink"><img src="./image/instalink.png"></div></a></article>
         <iframe src="introduce.html" scrolling="yes" name="aa"
-        width="1920px" height="610px" frameborder="1"></iframe>
+        width="1920px" height="610px" frameborder="0"></iframe>
     </section>
     <div class="clear"></div>
     <footer>
